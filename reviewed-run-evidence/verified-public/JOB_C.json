@@ -1,0 +1,24 @@
+{
+  "id": "e3dce1fd-f870-487c-960d-003b335fb5fd",
+  "run_id": "e9dd2b90-be71-4e10-b857-df417bd1c67e",
+  "scenario": "C",
+  "state": "TIMED_OUT",
+  "request": {
+    "scenario": "C",
+    "actor": "dev-user"
+  },
+  "result": {
+    "status": "UNKNOWN",
+    "infeasibility_reasons": [
+      "CP-SAT returned UNKNOWN: the hard C-scenario constraints cannot be satisfied within the 36-week horizon after adaptive growth"
+    ]
+  },
+  "error": "solver timed out",
+  "cancel_requested": false,
+  "time_limit_seconds": 30,
+  "seed": 42,
+  "submitted_at": "2026-09-19T06:14:35.861535",
+  "started_at": "2026-09-19T06:14:35.863735",
+  "finished_at": "2026-09-19T06:14:52.299323",
+  "created_at": "2026-09-19T06:14:35.862130"
+}

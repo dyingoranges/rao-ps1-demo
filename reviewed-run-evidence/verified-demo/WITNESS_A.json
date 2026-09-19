@@ -1,0 +1,257 @@
+{
+  "run_id": "325cfed1-b2b0-461d-acd8-2621877d6a8c",
+  "job_id": "f8753a22-ca1f-4e4e-9f75-f81f32c336c8",
+  "scenario": "A",
+  "access": [
+    {
+      "id": "aab17f67-75ac-43eb-ba6a-75885bf8c8af",
+      "activity_id": "A1",
+      "access_seq": 1,
+      "week": 1,
+      "eclo": false,
+      "access_night": 1,
+      "physical_night": 7
+    },
+    {
+      "id": "1596d16c-a590-41c9-8c64-b3e122cc1a26",
+      "activity_id": "A2",
+      "access_seq": 1,
+      "week": 1,
+      "eclo": false,
+      "access_night": 1,
+      "physical_night": 7
+    },
+    {
+      "id": "b0fc0d27-abf5-4642-9e17-319c25f74ef0",
+      "activity_id": "A3",
+      "access_seq": 1,
+      "week": 1,
+      "eclo": false,
+      "access_night": 1,
+      "physical_night": 7
+    }
+  ],
+  "occupancy": [
+    {
+      "id": "a20fb1ce-d646-4cf6-b57b-19357aae8ae6",
+      "activity_id": "A1",
+      "week": 1,
+      "location_id": "PLAT:ALP:S01:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "9482b372-0080-4684-91c1-256f4e8c231d",
+      "activity_id": "A1",
+      "week": 1,
+      "location_id": "PLAT:ALP:S02:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "1d58d0d5-78c3-401c-afb6-447a4bf17c8b",
+      "activity_id": "A1",
+      "week": 1,
+      "location_id": "SEC:ALP:S01_S02:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "9fe63d88-14df-4732-8da9-a9f960a64619",
+      "activity_id": "A2",
+      "week": 1,
+      "location_id": "PLAT:ALP:S01:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "d5587a1c-a7cb-4442-887d-8ba77998cdcb",
+      "activity_id": "A2",
+      "week": 1,
+      "location_id": "PLAT:ALP:S02:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "6dea9a74-e942-4ef3-b6b9-f4ab44d49ce6",
+      "activity_id": "A2",
+      "week": 1,
+      "location_id": "SEC:ALP:S01_S02:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "aab7a91f-0565-4644-b524-18480cf8b665",
+      "activity_id": "A3",
+      "week": 1,
+      "location_id": "PLAT:ALP:S01:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "794e7823-138b-4224-a8a5-3f52bd0a2fd5",
+      "activity_id": "A3",
+      "week": 1,
+      "location_id": "PLAT:ALP:S02:EB",
+      "co_share_group": "b1"
+    },
+    {
+      "id": "a8c11a7d-b86d-42a3-9d76-b94514e2e1a5",
+      "activity_id": "A3",
+      "week": 1,
+      "location_id": "SEC:ALP:S01_S02:EB",
+      "co_share_group": "b1"
+    }
+  ],
+  "results": [
+    {
+      "id": "a26c955a-38da-4c86-92d4-4ecedfd54643",
+      "contract_number": "C1",
+      "simulated_completion_date": "2027-01-10",
+      "overrun_days": 0
+    },
+    {
+      "id": "33532a14-f7df-4e29-be3b-18e4d45ffe5f",
+      "contract_number": "C2",
+      "simulated_completion_date": "2027-01-10",
+      "overrun_days": 0
+    },
+    {
+      "id": "4c6b7db8-5701-45c7-8ea8-be63a0d54a82",
+      "contract_number": "C3",
+      "simulated_completion_date": "2027-01-10",
+      "overrun_days": 0
+    }
+  ],
+  "explanations": [
+    {
+      "activity_id": "A1",
+      "reason_codes": [
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "summary": "A1 first access week 1; planned start week 1; bounded by planned start; packed under possession-mix rules; packed into a co-shared possession; used the contract workfront limit.",
+      "evidence": {
+        "first_week": 1,
+        "planned_start_week": 1,
+        "predecessor_activity_id": null,
+        "predecessor_last_week": null,
+        "horizon_weeks": 4,
+        "horizon_extended": false,
+        "access_type": "PC",
+        "co_share_group": "b1",
+        "co_share_partners": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "co_share_size": 3,
+        "mix_groups": [
+          "b1"
+        ]
+      }
+    },
+    {
+      "activity_id": "A2",
+      "reason_codes": [
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "summary": "A2 first access week 1; planned start week 1; bounded by planned start; packed under possession-mix rules; packed into a co-shared possession; used the contract workfront limit.",
+      "evidence": {
+        "first_week": 1,
+        "planned_start_week": 1,
+        "predecessor_activity_id": null,
+        "predecessor_last_week": null,
+        "horizon_weeks": 4,
+        "horizon_extended": false,
+        "access_type": "C",
+        "co_share_group": "b1",
+        "co_share_partners": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "co_share_size": 3,
+        "mix_groups": [
+          "b1"
+        ]
+      }
+    },
+    {
+      "activity_id": "A3",
+      "reason_codes": [
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "summary": "A3 first access week 1; planned start week 1; bounded by planned start; packed under possession-mix rules; packed into a co-shared possession; used the contract workfront limit.",
+      "evidence": {
+        "first_week": 1,
+        "planned_start_week": 1,
+        "predecessor_activity_id": null,
+        "predecessor_last_week": null,
+        "horizon_weeks": 4,
+        "horizon_extended": false,
+        "access_type": "C",
+        "co_share_group": "b1",
+        "co_share_partners": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "co_share_size": 3,
+        "mix_groups": [
+          "b1"
+        ]
+      }
+    }
+  ],
+  "physical_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "slot_mix",
+        "passed": true,
+        "detail": {
+          "slots_checked": 3,
+          "violations": []
+        }
+      },
+      {
+        "name": "closure_simultaneity",
+        "passed": true,
+        "detail": {
+          "pairs_checked": 3,
+          "violations": [],
+          "strongest_rule": null
+        }
+      },
+      {
+        "name": "capacity_slots",
+        "passed": true,
+        "detail": {
+          "location_weeks_checked": 3,
+          "hard_violations": [],
+          "soft_excess": [],
+          "soft_excess_total": 0
+        }
+      },
+      {
+        "name": "workfront_slots",
+        "passed": true,
+        "detail": {
+          "contract_week_slots_checked": 3,
+          "violations": []
+        }
+      },
+      {
+        "name": "witness_available",
+        "passed": true,
+        "detail": {
+          "access_rows": 3,
+          "rows_without_physical_night": 0,
+          "activities_without_physical_night": []
+        }
+      }
+    ]
+  }
+}

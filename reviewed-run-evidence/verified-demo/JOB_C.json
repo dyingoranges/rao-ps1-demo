@@ -1,0 +1,114 @@
+{
+  "id": "10a65a37-1fd2-4e67-81da-7ec0dc7dd533",
+  "run_id": "325cfed1-b2b0-461d-acd8-2621877d6a8c",
+  "scenario": "C",
+  "state": "COMPLETED",
+  "request": {
+    "scenario": "C",
+    "actor": "dev-user"
+  },
+  "result": {
+    "scenario": "C",
+    "status": "OPTIMAL",
+    "horizon_weeks_used": 2,
+    "objective_breakdown": {
+      "scenario": "C",
+      "overrun_days_total": 0,
+      "earliness_days_total": 129,
+      "contracts_overrunning": 0,
+      "priority_overrun": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "priority_weighted_score": 0.0,
+      "excess_access_nights_total": 0,
+      "eclo_nights_total": 0,
+      "access_nights_total": 3,
+      "nights_scheduled": 3,
+      "overshoot_units": 0,
+      "solver_objective": 0.0,
+      "score": 0.0,
+      "capacity_hotspots": []
+    },
+    "access_count": 3,
+    "occupancy_count": 9,
+    "contract_count": 3,
+    "authority": "fallback",
+    "ready_for_submission": true,
+    "binding_reasons": {
+      "A1": [
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A2": [
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A3": [
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ]
+    },
+    "physical_checks": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "slot_mix",
+          "passed": true,
+          "detail": {
+            "slots_checked": 3,
+            "violations": []
+          }
+        },
+        {
+          "name": "closure_simultaneity",
+          "passed": true,
+          "detail": {
+            "pairs_checked": 3,
+            "violations": [],
+            "strongest_rule": null
+          }
+        },
+        {
+          "name": "capacity_slots",
+          "passed": true,
+          "detail": {
+            "location_weeks_checked": 3,
+            "hard_violations": [],
+            "soft_excess": [],
+            "soft_excess_total": 0
+          }
+        },
+        {
+          "name": "workfront_slots",
+          "passed": true,
+          "detail": {
+            "contract_week_slots_checked": 3,
+            "violations": []
+          }
+        },
+        {
+          "name": "witness_available",
+          "passed": true,
+          "detail": {
+            "access_rows": 3,
+            "rows_without_physical_night": 0,
+            "activities_without_physical_night": []
+          }
+        }
+      ]
+    }
+  },
+  "error": null,
+  "cancel_requested": false,
+  "time_limit_seconds": 5,
+  "seed": 42,
+  "submitted_at": "2026-09-19T06:14:01.657568",
+  "started_at": "2026-09-19T06:14:01.659639",
+  "finished_at": "2026-09-19T06:14:01.764449",
+  "created_at": "2026-09-19T06:14:01.658117"
+}

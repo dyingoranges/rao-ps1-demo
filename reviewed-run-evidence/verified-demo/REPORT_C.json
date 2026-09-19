@@ -1,0 +1,41 @@
+{
+  "id": "f83bd7cc-db50-4c67-a783-57e12a188b05",
+  "job_id": "10a65a37-1fd2-4e67-81da-7ec0dc7dd533",
+  "scenario": "C",
+  "feasible": true,
+  "workload_complete": true,
+  "ready_for_submission": true,
+  "authority": "fallback",
+  "report": {
+    "scenario": "C",
+    "feasible": true,
+    "workload_complete": true,
+    "ready_for_submission": true,
+    "authority": "fallback",
+    "validator_source": "fallback",
+    "hard_violations": [],
+    "soft_scores": {
+      "scenario": "C",
+      "overrun_days_total": 0,
+      "contracts_overrunning": 0,
+      "earliness_days_total": 129,
+      "excess_access_nights_total": 0,
+      "eclo_nights_total": 0,
+      "priority_overrun": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "priority_weighted_score": 0.0,
+      "objective_score": 0.0,
+      "formula_version": "ps1-2.5"
+    },
+    "detail": {
+      "capacity_hotspots": [],
+      "nights_scheduled": 3,
+      "eclo_nights": 0
+    },
+    "parse_errors": []
+  },
+  "created_at": "2026-09-19T06:14:01.765696"
+}

@@ -1,0 +1,32 @@
+{
+  "labels": [
+    {"name": "owner:dev-1-instance", "color": "0E8A16", "description": "Owned by Developer 1: Instance and Domain Compiler"},
+    {"name": "owner:dev-2-solver", "color": "1D76DB", "description": "Owned by Developer 2: Scenario Solver and Worker"},
+    {"name": "owner:dev-3-validation", "color": "5319E7", "description": "Owned by Developer 3: Validation, Export and Runs"},
+    {"name": "owner:dev-4-experience", "color": "D93F0B", "description": "Owned by Developer 4: Frontend, Deployment and Explainability"},
+    {"name": "area:instance", "color": "C2E0C6", "description": "Instance parsing, canonical domain model and rule compiler"},
+    {"name": "area:solver", "color": "C5DEF5", "description": "CP-SAT constraints, scenario policies and solve worker"},
+    {"name": "area:validation", "color": "BFDADC", "description": "Reference validator, submission gate and CSV export"},
+    {"name": "area:runs", "color": "D4C5F9", "description": "Run lifecycle, persistence and scenario APIs"},
+    {"name": "area:frontend", "color": "FBCA04", "description": "Planner and works-controller web experience and explainability"},
+    {"name": "area:deployment", "color": "F9D0C4", "description": "Hosted packaging, compose and operations runbooks"},
+    {"name": "area:docs", "color": "0075CA", "description": "Architecture, runbooks and team documentation"},
+    {"name": "area:qa", "color": "BFD4F2", "description": "Acceptance, end-to-end and resilience testing"},
+    {"name": "status:backlog", "color": "D4D4D4", "description": "Defined but not ready to start"},
+    {"name": "status:ready", "color": "0E8A16", "description": "Ready to be claimed"},
+    {"name": "status:in-progress", "color": "FBCA04", "description": "Actively being implemented"},
+    {"name": "status:review", "color": "5319E7", "description": "Implementation is awaiting review"},
+    {"name": "status:done", "color": "2EA44F", "description": "Merged and verified against acceptance criteria"},
+    {"name": "status:blocked", "color": "B60205", "description": "Cannot progress until a dependency is resolved"},
+    {"name": "type:feature", "color": "A2EEEF", "description": "New or expanded capability"},
+    {"name": "type:bug", "color": "D73A4A", "description": "Incorrect behavior"},
+    {"name": "type:tech-debt", "color": "E4E669", "description": "Maintainability or architecture debt"},
+    {"name": "type:test", "color": "BFD4F2", "description": "Test coverage or validation work"},
+    {"name": "type:docs", "color": "0075CA", "description": "Documentation work"},
+    {"name": "risk:safety", "color": "B60205", "description": "Touches safety-sensitive decisions or hard feasibility rules"},
+    {"name": "risk:data-egress", "color": "D93F0B", "description": "May send or expose operator data outside the deployment"},
+    {"name": "risk:integration", "color": "F9D0C4", "description": "Depends on the published reference validator or an external system"},
+    {"name": "risk:migration", "color": "C5DEF5", "description": "Changes persisted schemas or deployment state"},
+    {"name": "governance:ownership", "color": "000000", "description": "Explicitly permits a reviewed ownership-registry change"}
+  ]
+}

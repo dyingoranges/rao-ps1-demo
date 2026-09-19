@@ -1,0 +1,1559 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-09-18",
+  "developers": [
+    {
+      "id": "DEV-1",
+      "display_name": "Developer 1 - Instance and Domain Compiler",
+      "github_handle": null,
+      "owner_label": "owner:dev-1-instance",
+      "review_partner": "DEV-2",
+      "primary_paths": [
+        "backend/app/modules/instance/",
+        "backend/app/domain/",
+        "backend/app/modules/compiler/"
+      ]
+    },
+    {
+      "id": "DEV-2",
+      "display_name": "Developer 2 - Scenario Solver and Worker",
+      "github_handle": null,
+      "owner_label": "owner:dev-2-solver",
+      "review_partner": "DEV-1",
+      "primary_paths": [
+        "backend/app/modules/solver/",
+        "backend/app/workers/"
+      ]
+    },
+    {
+      "id": "DEV-3",
+      "display_name": "Developer 3 - Validation, Export and Runs",
+      "github_handle": null,
+      "owner_label": "owner:dev-3-validation",
+      "review_partner": "DEV-4",
+      "primary_paths": [
+        "backend/app/modules/validator/",
+        "backend/app/modules/export/",
+        "backend/app/modules/runs/",
+        "backend/app/core/",
+        "backend/app/main.py",
+        "scripts/",
+        ".github/",
+        "docs/team/"
+      ]
+    },
+    {
+      "id": "DEV-4",
+      "display_name": "Developer 4 - Frontend, Deployment and Explainability",
+      "github_handle": null,
+      "owner_label": "owner:dev-4-experience",
+      "review_partner": "DEV-3",
+      "primary_paths": [
+        "frontend/",
+        "deploy/",
+        "docs/design/"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "F-INSTANCE-001",
+      "title": "Eight-file instance parsing and schema validation",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "done",
+      "milestone": "p1-correct-model",
+      "estimate_points": 5,
+      "requirements": [
+        "INP-01"
+      ],
+      "acceptance_tests": [
+        "AT-01"
+      ],
+      "paths": [
+        "backend/app/modules/instance/parser.py",
+        "backend/app/modules/instance/schemas.py",
+        "backend/app/modules/instance/service.py"
+      ],
+      "labels": [
+        "owner:dev-1-instance",
+        "area:instance",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-1",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-INSTANCE-002",
+      "title": "Canonical planning model for network, contracts and supply",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "done",
+      "milestone": "p1-correct-model",
+      "estimate_points": 8,
+      "requirements": [
+        "INP-02"
+      ],
+      "acceptance_tests": [
+        "AT-01"
+      ],
+      "paths": [
+        "backend/app/domain/rail/network.py",
+        "backend/app/domain/rail/instance_model.py",
+        "backend/app/domain/rail/compiled.py"
+      ],
+      "labels": [
+        "owner:dev-1-instance",
+        "area:instance",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-1",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-INSTANCE-003",
+      "title": "Route expansion from book-in to book-out",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "done",
+      "milestone": "p1-correct-model",
+      "estimate_points": 5,
+      "requirements": [
+        "INP-03"
+      ],
+      "acceptance_tests": [
+        "AT-02"
+      ],
+      "paths": [
+        "backend/app/domain/rail/routes.py",
+        "backend/app/modules/compiler/routes.py"
+      ],
+      "labels": [
+        "owner:dev-1-instance",
+        "area:instance",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-1",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-COMPILER-001",
+      "title": "Rule compiler for buffers, mirroring and interchange effects",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "done",
+      "milestone": "p1-correct-model",
+      "estimate_points": 8,
+      "requirements": [
+        "INP-04"
+      ],
+      "acceptance_tests": [
+        "AT-05",
+        "AT-06"
+      ],
+      "paths": [
+        "backend/app/modules/compiler/rule_compiler.py",
+        "backend/app/modules/compiler/closures.py",
+        "backend/app/modules/compiler/mixes.py",
+        "backend/app/modules/compiler/dependencies.py",
+        "backend/app/modules/compiler/policy.py"
+      ],
+      "labels": [
+        "owner:dev-1-instance",
+        "area:instance",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-1",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-COMPILER-002",
+      "title": "Explicit physical possession-slot domain contract",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "review",
+      "milestone": "p1-correct-model",
+      "estimate_points": 5,
+      "requirements": [
+        "SCH-04",
+        "SCH-05",
+        "SCH-06",
+        "SCH-07"
+      ],
+      "acceptance_tests": [
+        "AT-05",
+        "AT-06"
+      ],
+      "paths": [
+        "backend/app/domain/rail/compiled.py",
+        "backend/app/modules/compiler/closures.py",
+        "backend/app/modules/compiler/mixes.py"
+      ],
+      "labels": [
+        "area:instance",
+        "type:feature",
+        "risk:safety",
+        "owner:dev-1-instance",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-WORKER-001",
+      "title": "Asynchronous job queue and solver worker shell",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "skeleton-v1",
+      "estimate_points": 3,
+      "requirements": [
+        "NFR-01"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "backend/app/workers/rail_solver_worker.py",
+        "backend/app/modules/runs/queue.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:skeleton-v1"
+      }
+    },
+    {
+      "id": "F-SOLVER-001",
+      "title": "Workload conservation, planned start and predecessor constraints",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "SCH-01",
+        "SCH-02",
+        "SCH-03"
+      ],
+      "acceptance_tests": [
+        "AT-03",
+        "AT-04"
+      ],
+      "paths": [
+        "backend/app/modules/solver/model.py",
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/variables.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-002",
+      "title": "Closure buffers, Live mirroring and interchange closures",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "SCH-04",
+        "SCH-05"
+      ],
+      "acceptance_tests": [
+        "AT-05"
+      ],
+      "paths": [
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/compiler/closures.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-003",
+      "title": "Possession mixes and co-sharing grouping",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "SCH-06",
+        "SCH-07"
+      ],
+      "acceptance_tests": [
+        "AT-06"
+      ],
+      "paths": [
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/compiler/mixes.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-004",
+      "title": "Weekly allocation, workfront and ECLO yield constraints",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "SCH-08",
+        "SCH-09",
+        "SCH-10"
+      ],
+      "acceptance_tests": [
+        "AT-07"
+      ],
+      "paths": [
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/variables.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-005",
+      "title": "Hard and soft separation with congestion-safe completion",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "OPT-01",
+        "OPT-02"
+      ],
+      "acceptance_tests": [
+        "AT-08"
+      ],
+      "paths": [
+        "backend/app/modules/solver/objectives.py",
+        "backend/app/modules/solver/engine.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-006",
+      "title": "Async solve worker lifecycle and deterministic seeds",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 5,
+      "requirements": [
+        "OPT-03",
+        "OPT-04"
+      ],
+      "acceptance_tests": [
+        "AT-11"
+      ],
+      "paths": [
+        "backend/app/workers/rail_solver_worker.py",
+        "backend/app/modules/runs/queue.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SOLVER-007",
+      "title": "Physical possession-slot closure and co-sharing constraints",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "review",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "SCH-04",
+        "SCH-05",
+        "SCH-06",
+        "SCH-07"
+      ],
+      "acceptance_tests": [
+        "AT-05",
+        "AT-06"
+      ],
+      "paths": [
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/variables.py",
+        "backend/app/modules/solver/engine.py"
+      ],
+      "labels": [
+        "area:solver",
+        "type:bug",
+        "risk:safety",
+        "owner:dev-2-solver",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-SOLVER-008",
+      "title": "Adaptive horizon growth for congestion-safe completion",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "review",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 5,
+      "requirements": [
+        "OPT-01",
+        "OPT-02"
+      ],
+      "acceptance_tests": [
+        "AT-08",
+        "AT-10"
+      ],
+      "paths": [
+        "backend/app/modules/solver/engine.py",
+        "backend/app/workers/rail_solver_worker.py",
+        "backend/tests/test_scenarios_abc.py"
+      ],
+      "labels": [
+        "area:solver",
+        "type:bug",
+        "risk:safety",
+        "owner:dev-2-solver",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-SCENARIO-001",
+      "title": "Scenario A strict supply and weighted-overrun objective",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 8,
+      "requirements": [
+        "SCN-A1",
+        "SCN-A2"
+      ],
+      "acceptance_tests": [
+        "AT-08"
+      ],
+      "paths": [
+        "backend/app/modules/compiler/policy.py",
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/engine.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SCENARIO-002",
+      "title": "Scenario B fixed dates and flexibility costing",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 8,
+      "requirements": [
+        "SCN-B1",
+        "SCN-B2"
+      ],
+      "acceptance_tests": [
+        "AT-09"
+      ],
+      "paths": [
+        "backend/app/modules/compiler/policy.py",
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/objectives.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SCENARIO-003",
+      "title": "Scenario C combined objective, elasticity and ECLO window",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "done",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 13,
+      "requirements": [
+        "SCN-C1",
+        "SCN-C2",
+        "SCN-C3"
+      ],
+      "acceptance_tests": [
+        "AT-10"
+      ],
+      "paths": [
+        "backend/app/modules/compiler/policy.py",
+        "backend/app/modules/solver/constraints.py",
+        "backend/app/modules/solver/variables.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-2",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-BONUS-001",
+      "title": "Dynamic disruption impact assessment and minimal-churn replanning",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "backlog",
+      "milestone": "bonus",
+      "estimate_points": 8,
+      "requirements": [
+        "BON-01"
+      ],
+      "acceptance_tests": [
+        "AT-16"
+      ],
+      "paths": [
+        "backend/app/modules/solver/replan.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:backlog",
+        "type:feature"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-BONUS-002",
+      "title": "Fragility and what-if sandboxing extensions",
+      "owner": "DEV-2",
+      "reviewer": "DEV-1",
+      "area": "solver",
+      "status": "backlog",
+      "milestone": "bonus",
+      "estimate_points": 8,
+      "requirements": [
+        "BON-03"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "backend/app/modules/solver/sandbox.py"
+      ],
+      "labels": [
+        "owner:dev-2-solver",
+        "area:solver",
+        "status:backlog",
+        "type:feature"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-VALIDATOR-001",
+      "title": "Reference validator adapter and report parsing",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 5,
+      "requirements": [
+        "VAL-01"
+      ],
+      "acceptance_tests": [
+        "AT-12"
+      ],
+      "paths": [
+        "backend/app/modules/validator/adapter.py",
+        "backend/app/modules/validator/report.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:validation",
+        "status:done",
+        "type:feature",
+        "risk:integration"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-VALIDATOR-002",
+      "title": "Submission readiness gate for feasibility and full workload",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "done",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 5,
+      "requirements": [
+        "VAL-02"
+      ],
+      "acceptance_tests": [
+        "AT-03",
+        "AT-12"
+      ],
+      "paths": [
+        "backend/app/modules/validator/fallback_validator.py",
+        "backend/app/modules/validator/report.py",
+        "backend/app/modules/validator/checks/workload.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:validation",
+        "status:done",
+        "type:feature",
+        "risk:safety"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-VALIDATOR-003",
+      "title": "Physical possession-slot fallback validation",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "review",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 5,
+      "requirements": [
+        "SCH-04",
+        "SCH-05",
+        "SCH-06",
+        "SCH-07",
+        "VAL-02"
+      ],
+      "acceptance_tests": [
+        "AT-05",
+        "AT-06",
+        "AT-12"
+      ],
+      "paths": [
+        "backend/app/modules/validator/fallback_validator.py",
+        "backend/app/modules/validator/checks/closures.py",
+        "backend/app/modules/validator/checks/mix.py",
+        "backend/app/modules/validator/checks/capacity.py"
+      ],
+      "labels": [
+        "area:validation",
+        "type:bug",
+        "risk:safety",
+        "owner:dev-3-validation",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-VALIDATOR-004",
+      "title": "Official validator calibration and semantic conformance",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "blocked",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 3,
+      "requirements": [
+        "VAL-01",
+        "VAL-02"
+      ],
+      "acceptance_tests": [
+        "AT-12"
+      ],
+      "paths": [
+        "backend/app/modules/validator/adapter.py",
+        "backend/tests/test_validator_adapter.py",
+        "backend/tests/test_validator_fallback.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:validation",
+        "status:blocked",
+        "type:test",
+        "risk:integration"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-EXPORT-001",
+      "title": "Exact SCHEDULE_ACCESS and SCHEDULE_OCCUPANCY export",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "done",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 5,
+      "requirements": [
+        "OUT-01",
+        "OUT-02"
+      ],
+      "acceptance_tests": [
+        "AT-13"
+      ],
+      "paths": [
+        "backend/app/modules/export/access.py",
+        "backend/app/modules/export/occupancy.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:validation",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-EXPORT-002",
+      "title": "Scenario RESULTS export and answer-key separation",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "done",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 5,
+      "requirements": [
+        "OUT-03",
+        "OUT-04"
+      ],
+      "acceptance_tests": [
+        "AT-13"
+      ],
+      "paths": [
+        "backend/app/modules/export/results.py",
+        "backend/app/modules/export/bundle.py",
+        "backend/app/modules/export/archive.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:validation",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-RUNS-001",
+      "title": "Persistent run store and retained run metadata",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "runs",
+      "status": "done",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 8,
+      "requirements": [
+        "NFR-02"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "backend/app/modules/runs/service.py",
+        "backend/app/domain/models.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:runs",
+        "status:done",
+        "type:feature",
+        "risk:migration"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-RUNS-002",
+      "title": "Scenario run API and result retrieval",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "runs",
+      "status": "done",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 8,
+      "requirements": [
+        "OPT-03"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "backend/app/modules/runs/api.py",
+        "backend/app/modules/runs/service.py",
+        "backend/app/modules/runs/queue.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:runs",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-SHELL-001",
+      "title": "Backend application shell, configuration and persistence scaffold",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "runs",
+      "status": "done",
+      "milestone": "skeleton-v1",
+      "estimate_points": 5,
+      "requirements": [
+        "NFR-01"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "backend/app/main.py",
+        "backend/app/core/config.py",
+        "backend/app/core/db.py"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:runs",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:skeleton-v1"
+      }
+    },
+    {
+      "id": "F-GOVERNANCE-001",
+      "title": "Feature registry, labels and PR governance tooling",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "docs",
+      "status": "done",
+      "milestone": "skeleton-v1",
+      "estimate_points": 3,
+      "requirements": [
+        "NFR-02"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "scripts/features.py",
+        "scripts/check_pr_governance.py",
+        ".github/labels.json",
+        ".github/workflows/feature-governance.yml",
+        "docs/team/feature-registry.json"
+      ],
+      "labels": [
+        "owner:dev-3-validation",
+        "area:docs",
+        "status:done",
+        "type:docs"
+      ],
+      "completion": {
+        "completed_by": "DEV-3",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:skeleton-v1"
+      }
+    },
+    {
+      "id": "F-QA-001",
+      "title": "Public A/B/C answer generation and mandatory CI validation",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "qa",
+      "status": "review",
+      "milestone": "p3-scenario-optimisation",
+      "estimate_points": 8,
+      "requirements": [
+        "OPT-01",
+        "OUT-04",
+        "VAL-02"
+      ],
+      "acceptance_tests": [
+        "AT-08",
+        "AT-09",
+        "AT-10",
+        "AT-12",
+        "AT-13"
+      ],
+      "paths": [
+        "scripts/generate_public_answers.py",
+        "Makefile",
+        ".github/workflows/ci.yml",
+        "backend/tests/test_scenarios_abc.py",
+        "backend/tests/test_validator_fallback.py"
+      ],
+      "labels": [
+        "area:qa",
+        "type:test",
+        "risk:integration",
+        "owner:dev-3-validation",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-FRONTEND-001",
+      "title": "Typed web shell and backend health client",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "done",
+      "milestone": "skeleton-v1",
+      "estimate_points": 3,
+      "requirements": [
+        "NFR-01"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "frontend/package.json",
+        "frontend/vite.config.ts",
+        "frontend/tsconfig.json",
+        "frontend/src/main.tsx",
+        "frontend/src/App.tsx",
+        "frontend/src/api/client.ts"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:frontend",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-4",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:skeleton-v1"
+      }
+    },
+    {
+      "id": "F-UPLOAD-001",
+      "title": "Hidden-instance upload and scenario run interface",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "done",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 8,
+      "requirements": [
+        "UX-01"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "frontend/src/components/UploadPanel.tsx",
+        "frontend/src/components/ScenarioLauncher.tsx",
+        "frontend/src/components/JobMonitor.tsx",
+        "frontend/src/components/RunLibrary.tsx",
+        "frontend/src/api/client.ts",
+        "frontend/src/hooks/useJobPolling.ts"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:frontend",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-4",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:v0.3.0"
+      }
+    },
+    {
+      "id": "F-TIMELINE-001",
+      "title": "Schedule timeline and capacity hotspot visualisation",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 8,
+      "requirements": [
+        "UX-02"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "frontend/src/components/ActivityTimeline.tsx",
+        "frontend/src/components/HotspotsPanel.tsx",
+        "frontend/src/components/ResultDashboard.tsx",
+        "frontend/src/components/EcloPanel.tsx",
+        "frontend/src/components/ContractTable.tsx"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:frontend",
+        "status:review",
+        "type:feature"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-EXPLAIN-001",
+      "title": "Deterministic constraint and displacement explanation engine",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p5-explainability",
+      "estimate_points": 13,
+      "requirements": [
+        "EXP-01"
+      ],
+      "acceptance_tests": [
+        "AT-14"
+      ],
+      "paths": [
+        "backend/app/modules/solver/engine.py",
+        "backend/app/modules/runs/service.py",
+        "backend/app/domain/schemas.py",
+        "backend/tests/test_explanations.py"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-EXPLAIN-002",
+      "title": "Validator diagnostics and score-component dashboard",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p5-explainability",
+      "estimate_points": 5,
+      "requirements": [
+        "EXP-02"
+      ],
+      "acceptance_tests": [
+        "AT-14"
+      ],
+      "paths": [
+        "frontend/src/components/ExplanationsPanel.tsx",
+        "frontend/src/components/ScorePanel.tsx",
+        "frontend/src/components/ViolationsPanel.tsx",
+        "frontend/src/components/ValidatorGate.tsx",
+        "frontend/src/api/types.ts"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:frontend",
+        "status:review",
+        "type:feature"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-DEPLOY-001",
+      "title": "Containerised single-host deployment shell",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "deployment",
+      "status": "done",
+      "milestone": "skeleton-v1",
+      "estimate_points": 5,
+      "requirements": [
+        "NFR-01"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "deploy/docker-compose.yml",
+        "deploy/.env.example",
+        "backend/Dockerfile",
+        "Makefile"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:deployment",
+        "status:done",
+        "type:feature"
+      ],
+      "completion": {
+        "completed_by": "DEV-4",
+        "completed_on": "2026-09-18",
+        "reference": "baseline:skeleton-v1"
+      }
+    },
+    {
+      "id": "F-DEPLOY-002",
+      "title": "Production frontend and hosted judge operations runbook",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "deployment",
+      "status": "review",
+      "milestone": "p4-hosted-workflow",
+      "estimate_points": 8,
+      "requirements": [
+        "NFR-01"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "deploy/",
+        "frontend/Dockerfile",
+        "docs/"
+      ],
+      "labels": [
+        "area:deployment",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-BONUS-003",
+      "title": "Natural-language schedule query layer with deterministic guardrails",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "backlog",
+      "milestone": "bonus",
+      "estimate_points": 5,
+      "requirements": [
+        "BON-02"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "backend/app/modules/explain/query.py",
+        "frontend/src/features/assistant/"
+      ],
+      "labels": [
+        "owner:dev-4-experience",
+        "area:frontend",
+        "status:backlog",
+        "type:feature",
+        "risk:data-egress"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-001",
+      "title": "Interactive track schematic with possession buffer mirror and capacity overlays",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p6-control-board",
+      "estimate_points": 13,
+      "requirements": [
+        "UX-02"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "frontend/src/components/TrackSchematic.tsx",
+        "frontend/src/lib/schematic.ts",
+        "frontend/src/api/types.ts",
+        "frontend/src/styles/app.css"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-002",
+      "title": "Linked possession selection and activity detail drawer",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p6-control-board",
+      "estimate_points": 8,
+      "requirements": [
+        "UX-02"
+      ],
+      "acceptance_tests": [
+        "AT-14",
+        "AT-15"
+      ],
+      "paths": [
+        "frontend/src/components/PossessionDrawer.tsx",
+        "frontend/src/components/ResultDashboard.tsx",
+        "frontend/src/components/ActivityTimeline.tsx",
+        "frontend/src/App.tsx"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-RUNS-003",
+      "title": "Control-board data contract for physical slots and compiled activity spans",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "runs",
+      "status": "review",
+      "milestone": "p6-control-board",
+      "estimate_points": 8,
+      "requirements": [
+        "OPT-03",
+        "UX-02"
+      ],
+      "acceptance_tests": [
+        "AT-15"
+      ],
+      "paths": [
+        "backend/app/domain/models.py",
+        "backend/app/domain/schemas.py",
+        "backend/app/modules/runs/service.py",
+        "backend/app/modules/runs/api.py",
+        "backend/app/workers/rail_solver_worker.py",
+        "backend/tests/test_runs_api.py"
+      ],
+      "labels": [
+        "area:runs",
+        "type:feature",
+        "risk:migration",
+        "owner:dev-3-validation",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-003",
+      "title": "Tonight controller mode for live shift handover",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "backlog",
+      "milestone": "p6-control-board",
+      "estimate_points": 8,
+      "requirements": [
+        "UX-01"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "frontend/src/components/TonightPanel.tsx",
+        "frontend/src/App.tsx"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:backlog"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-004",
+      "title": "Scenario A/B/C side-by-side comparison board",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "backlog",
+      "milestone": "p6-control-board",
+      "estimate_points": 13,
+      "requirements": [
+        "UX-02",
+        "SCN-A1"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "frontend/src/components/ScenarioCompare.tsx",
+        "frontend/src/components/ResultDashboard.tsx"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:backlog"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-005",
+      "title": "Embedded why-here and why-not-there interactions",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "backlog",
+      "milestone": "p6-control-board",
+      "estimate_points": 8,
+      "requirements": [
+        "EXP-01",
+        "EXP-02"
+      ],
+      "acceptance_tests": [
+        "AT-14"
+      ],
+      "paths": [
+        "frontend/src/components/PossessionDrawer.tsx",
+        "frontend/src/components/ExplanationsPanel.tsx"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:backlog"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-VALIDATOR-005",
+      "title": "Independent physical schedule witness check",
+      "owner": "DEV-3",
+      "reviewer": "DEV-4",
+      "area": "validation",
+      "status": "review",
+      "milestone": "p2-feasible-solver",
+      "estimate_points": 8,
+      "requirements": [
+        "VAL-02",
+        "OPT-03"
+      ],
+      "acceptance_tests": [
+        "AT-12",
+        "AT-15"
+      ],
+      "paths": [
+        "backend/app/modules/validator/witness.py",
+        "backend/app/workers/rail_solver_worker.py",
+        "backend/app/modules/runs/service.py",
+        "backend/app/domain/schemas.py",
+        "backend/tests/test_physical_witness.py"
+      ],
+      "labels": [
+        "area:validation",
+        "type:feature",
+        "risk:safety",
+        "owner:dev-3-validation",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-006",
+      "title": "Three-layer validation assurance status panel",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "review",
+      "milestone": "p6-control-board",
+      "estimate_points": 5,
+      "requirements": [
+        "UX-02",
+        "VAL-02"
+      ],
+      "acceptance_tests": [
+        "AT-12",
+        "AT-15"
+      ],
+      "paths": [
+        "frontend/src/components/AssurancePanel.tsx",
+        "frontend/src/components/ValidatorGate.tsx",
+        "frontend/src/components/ResultDashboard.tsx",
+        "frontend/src/api/types.ts"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-DATA-001",
+      "title": "Mapped DTL and CCL demonstration dataset generator",
+      "owner": "DEV-1",
+      "reviewer": "DEV-2",
+      "area": "instance",
+      "status": "review",
+      "milestone": "p7-mapped-sandbox",
+      "estimate_points": 13,
+      "requirements": [
+        "INP-01",
+        "INP-02"
+      ],
+      "acceptance_tests": [
+        "AT-01",
+        "AT-02"
+      ],
+      "paths": [
+        "scripts/generate_mapped_instance.py",
+        "scripts/mapped_network.py",
+        "backend/tests/test_mapped_instance.py",
+        "data/mapped/README.md"
+      ],
+      "labels": [
+        "area:instance",
+        "type:feature",
+        "owner:dev-1-instance",
+        "status:review"
+      ],
+      "completion": null
+    },
+    {
+      "id": "F-CONTROL-007",
+      "title": "Real-network presentation mapping layer",
+      "owner": "DEV-4",
+      "reviewer": "DEV-3",
+      "area": "frontend",
+      "status": "backlog",
+      "milestone": "p7-mapped-sandbox",
+      "estimate_points": 5,
+      "requirements": [
+        "UX-02"
+      ],
+      "acceptance_tests": [],
+      "paths": [
+        "frontend/src/lib/networkNames.ts",
+        "frontend/src/components/TrackSchematic.tsx"
+      ],
+      "labels": [
+        "area:frontend",
+        "type:feature",
+        "owner:dev-4-experience",
+        "status:backlog"
+      ],
+      "completion": null
+    }
+  ]
+}

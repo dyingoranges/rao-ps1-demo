@@ -1,0 +1,1173 @@
+{
+  "id": "512361a9-9180-4e3b-b8ef-bfac7e93148e",
+  "run_id": "e9dd2b90-be71-4e10-b857-df417bd1c67e",
+  "scenario": "B",
+  "state": "COMPLETED",
+  "request": {
+    "scenario": "B",
+    "actor": "dev-user"
+  },
+  "result": {
+    "scenario": "B",
+    "status": "FEASIBLE",
+    "horizon_weeks_used": 28,
+    "objective_breakdown": {
+      "scenario": "B",
+      "overrun_days_total": 0,
+      "earliness_days_total": 84,
+      "contracts_overrunning": 0,
+      "priority_overrun": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "priority_weighted_score": 0.0,
+      "excess_access_nights_total": 54,
+      "eclo_nights_total": 19,
+      "access_nights_total": 218,
+      "nights_scheduled": 218,
+      "overshoot_units": 71,
+      "solver_objective": 4801.0,
+      "score": 473,
+      "capacity_hotspots": [
+        {
+          "location_id": "PLAT:ALP:H01:EB",
+          "week": 23,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H01:WB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H01:WB",
+          "week": 13,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H01:WB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H01:WB",
+          "week": 18,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H01:WB",
+          "week": 19,
+          "used": 3,
+          "capacity": 1,
+          "excess": 2
+        },
+        {
+          "location_id": "PLAT:ALP:H02:WB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H02:WB",
+          "week": 13,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H02:WB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:H02:WB",
+          "week": 19,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:ALP:S04:WB",
+          "week": 19,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 15,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 17,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 18,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 19,
+          "used": 3,
+          "capacity": 1,
+          "excess": 2
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 20,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 22,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H01:EB",
+          "week": 25,
+          "used": 3,
+          "capacity": 1,
+          "excess": 2
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 15,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 17,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 18,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 19,
+          "used": 3,
+          "capacity": 1,
+          "excess": 2
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 20,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 22,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 23,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 25,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:H02:EB",
+          "week": 27,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:S15:EB",
+          "week": 15,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:S15:EB",
+          "week": 19,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:S15:EB",
+          "week": 27,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:S16:EB",
+          "week": 16,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "PLAT:BET:S16:EB",
+          "week": 27,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:ALP:H01_H02:WB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:ALP:H01_H02:WB",
+          "week": 13,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:ALP:H01_H02:WB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:ALP:H01_H02:WB",
+          "week": 19,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:ALP:S04_H01:WB",
+          "week": 19,
+          "used": 3,
+          "capacity": 2,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 12,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 14,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 15,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 17,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 18,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 19,
+          "used": 3,
+          "capacity": 1,
+          "excess": 2
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 20,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        },
+        {
+          "location_id": "SEC:BET:H01_H02:EB",
+          "week": 25,
+          "used": 2,
+          "capacity": 1,
+          "excess": 1
+        }
+      ]
+    },
+    "access_count": 218,
+    "occupancy_count": 1072,
+    "contract_count": 14,
+    "authority": "fallback",
+    "ready_for_submission": true,
+    "binding_reasons": {
+      "A001": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX"
+      ],
+      "A002": [
+        "BUFFER_CLOSURE",
+        "WEEKLY_CAP"
+      ],
+      "A003": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP"
+      ],
+      "A004": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "WORKFRONT"
+      ],
+      "A006": [
+        "CAPACITY",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A007": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A008": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A009": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A011": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A012": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A013": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "WORKFRONT"
+      ],
+      "A014": [
+        "BUFFER_CLOSURE",
+        "PLANNED_START",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A017": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A019": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A020": [
+        "CAPACITY",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A021": [
+        "WORKFRONT"
+      ],
+      "A023": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A025": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A028": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX"
+      ],
+      "A031": [],
+      "A035": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A036": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A037": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A038": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A039": [
+        "BUFFER_CLOSURE",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A040": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A041": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A042": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A043": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A046": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A047": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A048": [
+        "BUFFER_CLOSURE",
+        "WORKFRONT"
+      ],
+      "A049": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A050": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A051": [
+        "PLANNED_START",
+        "WORKFRONT"
+      ],
+      "A054": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "WORKFRONT"
+      ],
+      "A055": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A056": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A057": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A058": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A059": [
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A060": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A061": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A063": [
+        "CAPACITY"
+      ],
+      "A064": [
+        "WEEKLY_CAP"
+      ],
+      "A065": [
+        "BUFFER_CLOSURE",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A066": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A069": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A070": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A071": [
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A072": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A073": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A074": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "WORKFRONT"
+      ],
+      "A075": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "WORKFRONT"
+      ]
+    },
+    "physical_checks": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "slot_mix",
+          "passed": true,
+          "detail": {
+            "slots_checked": 908,
+            "violations": []
+          }
+        },
+        {
+          "name": "closure_simultaneity",
+          "passed": true,
+          "detail": {
+            "pairs_checked": 384,
+            "violations": [],
+            "strongest_rule": null
+          }
+        },
+        {
+          "name": "capacity_slots",
+          "passed": true,
+          "detail": {
+            "location_weeks_checked": 769,
+            "hard_violations": [],
+            "soft_excess": [
+              {
+                "location_id": "PLAT:ALP:H01:EB",
+                "week": 23,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H01:WB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H01:WB",
+                "week": 13,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H01:WB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H01:WB",
+                "week": 18,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H01:WB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 1,
+                "excess": 2
+              },
+              {
+                "location_id": "PLAT:ALP:H02:WB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H02:WB",
+                "week": 13,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H02:WB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:H02:WB",
+                "week": 19,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:ALP:S04:WB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 15,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 17,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 18,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 1,
+                "excess": 2
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 20,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 22,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H01:EB",
+                "week": 25,
+                "used_slots": 3,
+                "supply_capacity": 1,
+                "excess": 2
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 15,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 17,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 18,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 1,
+                "excess": 2
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 20,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 22,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 23,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 25,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:H02:EB",
+                "week": 27,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:S15:EB",
+                "week": 15,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:S15:EB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:S15:EB",
+                "week": 27,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:S16:EB",
+                "week": 16,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "PLAT:BET:S16:EB",
+                "week": 27,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:ALP:H01_H02:WB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:ALP:H01_H02:WB",
+                "week": 13,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:ALP:H01_H02:WB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:ALP:H01_H02:WB",
+                "week": 19,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:ALP:S04_H01:WB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 2,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 12,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 14,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 15,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 17,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 18,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 19,
+                "used_slots": 3,
+                "supply_capacity": 1,
+                "excess": 2
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 20,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              },
+              {
+                "location_id": "SEC:BET:H01_H02:EB",
+                "week": 25,
+                "used_slots": 2,
+                "supply_capacity": 1,
+                "excess": 1
+              }
+            ],
+            "soft_excess_total": 54
+          }
+        },
+        {
+          "name": "workfront_slots",
+          "passed": true,
+          "detail": {
+            "contract_week_slots_checked": 210,
+            "violations": []
+          }
+        },
+        {
+          "name": "witness_available",
+          "passed": true,
+          "detail": {
+            "access_rows": 218,
+            "rows_without_physical_night": 0,
+            "activities_without_physical_night": []
+          }
+        }
+      ]
+    }
+  },
+  "error": null,
+  "cancel_requested": false,
+  "time_limit_seconds": 30,
+  "seed": 42,
+  "submitted_at": "2026-09-19T06:14:19.420068",
+  "started_at": "2026-09-19T06:14:19.422670",
+  "finished_at": "2026-09-19T06:14:35.425606",
+  "created_at": "2026-09-19T06:14:19.420656"
+}

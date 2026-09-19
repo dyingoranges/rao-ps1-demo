@@ -1,0 +1,506 @@
+{
+  "id": "df9a0619-306b-4cce-b76d-de1a8e170fa7",
+  "run_id": "e9dd2b90-be71-4e10-b857-df417bd1c67e",
+  "scenario": "A",
+  "state": "COMPLETED",
+  "request": {
+    "scenario": "A",
+    "actor": "dev-user"
+  },
+  "result": {
+    "scenario": "A",
+    "status": "FEASIBLE",
+    "horizon_weeks_used": 36,
+    "objective_breakdown": {
+      "scenario": "A",
+      "overrun_days_total": 336,
+      "earliness_days_total": 14,
+      "contracts_overrunning": 6,
+      "priority_overrun": {
+        "1": 0,
+        "2": 0,
+        "3": 336
+      },
+      "priority_weighted_score": 449.40000000000003,
+      "excess_access_nights_total": 0,
+      "eclo_nights_total": 0,
+      "access_nights_total": 225,
+      "nights_scheduled": 225,
+      "overshoot_units": 66,
+      "solver_objective": 4560.0,
+      "score": 449.40000000000003,
+      "capacity_hotspots": []
+    },
+    "access_count": 225,
+    "occupancy_count": 1085,
+    "contract_count": 14,
+    "authority": "fallback",
+    "ready_for_submission": true,
+    "binding_reasons": {
+      "A001": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX"
+      ],
+      "A002": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A003": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A004": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "WEEKLY_CAP"
+      ],
+      "A006": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A007": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A008": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A009": [
+        "BUFFER_CLOSURE",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A011": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A012": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A013": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "WORKFRONT"
+      ],
+      "A014": [
+        "BUFFER_CLOSURE",
+        "PLANNED_START",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A017": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A019": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A020": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A021": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A023": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A025": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A028": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX"
+      ],
+      "A031": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN"
+      ],
+      "A035": [
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A036": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A037": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A038": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "PREDECESSOR",
+        "PRIORITY_OVERRUN",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A039": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A040": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A041": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A042": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A043": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A046": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A047": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "INTERCHANGE",
+        "WORKFRONT"
+      ],
+      "A048": [
+        "BUFFER_CLOSURE",
+        "WORKFRONT"
+      ],
+      "A049": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "PLANNED_START",
+        "WORKFRONT"
+      ],
+      "A050": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A051": [
+        "BUFFER_CLOSURE",
+        "WORKFRONT"
+      ],
+      "A054": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A055": [
+        "CAPACITY",
+        "HORIZON_EXTENDED",
+        "PRIORITY_OVERRUN",
+        "WORKFRONT"
+      ],
+      "A056": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A057": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A058": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A059": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A060": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN",
+        "WORKFRONT"
+      ],
+      "A061": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WEEKLY_CAP",
+        "WORKFRONT"
+      ],
+      "A063": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A064": [
+        "CAPACITY",
+        "POSSESSION_MIX",
+        "PRIORITY_OVERRUN",
+        "WEEKLY_CAP"
+      ],
+      "A065": [
+        "BUFFER_CLOSURE",
+        "PLANNED_START",
+        "WORKFRONT"
+      ],
+      "A066": [
+        "CAPACITY",
+        "INTERCHANGE",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A069": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A070": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A071": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "PLANNED_START",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A072": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A073": [
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A074": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "CO_SHARE_PACKED",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "POSSESSION_MIX",
+        "WORKFRONT"
+      ],
+      "A075": [
+        "BUFFER_CLOSURE",
+        "CAPACITY",
+        "INTERCHANGE",
+        "LIVE_MIRROR",
+        "PLANNED_START",
+        "PRIORITY_OVERRUN",
+        "WORKFRONT"
+      ]
+    },
+    "physical_checks": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "slot_mix",
+          "passed": true,
+          "detail": {
+            "slots_checked": 845,
+            "violations": []
+          }
+        },
+        {
+          "name": "closure_simultaneity",
+          "passed": true,
+          "detail": {
+            "pairs_checked": 384,
+            "violations": [],
+            "strongest_rule": null
+          }
+        },
+        {
+          "name": "capacity_slots",
+          "passed": true,
+          "detail": {
+            "location_weeks_checked": 771,
+            "hard_violations": [],
+            "soft_excess": [],
+            "soft_excess_total": 0
+          }
+        },
+        {
+          "name": "workfront_slots",
+          "passed": true,
+          "detail": {
+            "contract_week_slots_checked": 217,
+            "violations": []
+          }
+        },
+        {
+          "name": "witness_available",
+          "passed": true,
+          "detail": {
+            "access_rows": 225,
+            "rows_without_physical_night": 0,
+            "activities_without_physical_night": []
+          }
+        }
+      ]
+    }
+  },
+  "error": null,
+  "cancel_requested": false,
+  "time_limit_seconds": 30,
+  "seed": 42,
+  "submitted_at": "2026-09-19T06:14:02.505060",
+  "started_at": "2026-09-19T06:14:02.508452",
+  "finished_at": "2026-09-19T06:14:18.983639",
+  "created_at": "2026-09-19T06:14:02.505863"
+}

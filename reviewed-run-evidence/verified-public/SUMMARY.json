@@ -1,0 +1,65 @@
+{
+  "instance": "data/public-instance",
+  "demo_dates": false,
+  "jobs": [
+    {
+      "scenario": "A",
+      "ready": true,
+      "job_id": "df9a0619-306b-4cce-b76d-de1a8e170fa7",
+      "state": "COMPLETED",
+      "solver_status": "FEASIBLE",
+      "possessions": 187,
+      "authority": "fallback",
+      "scores": {
+        "scenario": "A",
+        "overrun_days_total": 336,
+        "contracts_overrunning": 6,
+        "earliness_days_total": 14,
+        "excess_access_nights_total": 0,
+        "eclo_nights_total": 0,
+        "priority_overrun": {
+          "1": 0,
+          "2": 0,
+          "3": 336
+        },
+        "priority_weighted_score": 449.4,
+        "objective_score": 449.40000000000003,
+        "formula_version": "ps1-2.5"
+      }
+    },
+    {
+      "scenario": "B",
+      "ready": true,
+      "job_id": "512361a9-9180-4e3b-b8ef-bfac7e93148e",
+      "state": "COMPLETED",
+      "solver_status": "FEASIBLE",
+      "possessions": 216,
+      "authority": "fallback",
+      "scores": {
+        "scenario": "B",
+        "overrun_days_total": 0,
+        "contracts_overrunning": 0,
+        "earliness_days_total": 84,
+        "excess_access_nights_total": 54,
+        "eclo_nights_total": 19,
+        "priority_overrun": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "priority_weighted_score": 0.0,
+        "objective_score": 473.0,
+        "formula_version": "ps1-2.5"
+      }
+    },
+    {
+      "scenario": "C",
+      "ready": false,
+      "job_id": "e3dce1fd-f870-487c-960d-003b335fb5fd",
+      "state": "TIMED_OUT",
+      "solver_status": "UNKNOWN",
+      "error": "solver timed out"
+    }
+  ],
+  "run_id": "e9dd2b90-be71-4e10-b857-df417bd1c67e"
+}
